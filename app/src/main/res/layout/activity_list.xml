@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <ImageView
+        android:id="@+id/im_iphone"
+        android:layout_width="74dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/iphone_spinner"
+        android:layout_width="231dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/im_iphone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/im_samsung"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/p2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_iphone" />
+
+    <Spinner
+        android:id="@+id/samsung_spinner"
+        android:layout_width="229dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toEndOf="@+id/im_samsung"
+        app:layout_constraintTop_toBottomOf="@+id/iphone_spinner"
+        tools:ignore="TouchTargetSizeCheck" />
+    <ImageView
+        android:id="@+id/im_oppo"
+        android:layout_width="81dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_samsung" />
+
+    <Spinner
+        android:id="@+id/oppo_spinner"
+        android:layout_width="232dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/im_oppo"
+        app:layout_constraintTop_toBottomOf="@+id/samsung_spinner"
+        tools:ignore="TouchTargetSizeCheck" />
+    <ImageView
+        android:id="@+id/im_google"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/p4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_oppo" />
+
+    <Spinner
+        android:id="@+id/google_spinner"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/im_google"
+        app:layout_constraintTop_toBottomOf="@+id/oppo_spinner"
+        tools:ignore="TouchTargetSizeCheck" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="416dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="68dp"
+        app:cardBackgroundColor="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_spinner"
+        tools:ignore="MissingConstraints">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_selector"
+                android:button="@color/As"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="128 GB"
+                android:textColor="@drawable/text_color_selector"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_selector"
+                android:button="@color/As"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="64 GB"
+                android:textColor="@drawable/text_color_selector"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_selector"
+                android:button="@color/As"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="256 GB"
+                android:textColor="@drawable/text_color_selector"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:pointerIcon="zoom_in"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/material_dynamic_neutral_variant80"
+        app:circularflow_defaultRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="20dp"
+        android:padding="1dp"
+        android:text="            FATIMA       Company       For Smart         Phones"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:background="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

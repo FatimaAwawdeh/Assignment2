@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:gravity="center"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="112dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:gravity="center"
+        android:layout_width="363dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:gravity="center"
+        android:layout_width="366dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:gravity="center"
+        android:layout_width="370dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:gravity="center"
+        android:layout_width="373dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:gravity="center"
+        android:layout_width="373dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:gravity="center"
+        android:layout_width="385dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@color/As"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
