@@ -1,14 +1,9 @@
 package com.fatimacompany.fatima_assignment2_java;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.ImageView;
-
 import com.fatimacompany.fatima_assignment2_java.databinding.ActivityThanksBinding;
 
 public class ThanksActivity extends AppCompatActivity {

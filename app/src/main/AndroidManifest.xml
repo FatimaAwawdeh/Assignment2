@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FATIMA_Assignment2_Java"
         tools:targetApi="31">
-        <activity
-            android:name=".v"
-            android:exported="false" />
+
         <activity
             android:name=".ThanksActivity"
             android:exported="false" />

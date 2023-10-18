@@ -182,7 +182,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/gobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GO"

@@ -2,14 +2,9 @@ package com.fatimacompany.fatima_assignment2_java;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import com.fatimacompany.fatima_assignment2_java.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

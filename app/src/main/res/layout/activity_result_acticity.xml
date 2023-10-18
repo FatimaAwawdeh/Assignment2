@@ -5,18 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity">
+    tools:context=".ResultActivity"
+    tools:ignore="ExtraText">
 
 
     <TextView
         android:id="@+id/tv1"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:layout_width="361dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="112dp"
+        android:maxLines="1"
         android:text="TextView"
         android:textSize="20dp"
-        android:maxLines="1"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,13 +25,13 @@
 
     <TextView
         android:id="@+id/tv2"
-        android:gravity="center"
-        android:layout_width="363dp"
-        android:layout_height="49dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxLines="1"
         android:text="TextView"
         android:textSize="20dp"
-        android:maxLines="1"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,8 +40,8 @@
     <TextView
         android:id="@+id/tv3"
         android:gravity="center"
-        android:layout_width="366dp"
-        android:layout_height="62dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textSize="20dp"
@@ -54,8 +55,8 @@
     <TextView
         android:id="@+id/tv4"
         android:gravity="center"
-        android:layout_width="370dp"
-        android:layout_height="62dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="4dp"
         android:text="TextView"
         android:textSize="20dp"
@@ -69,8 +70,8 @@
     <TextView
         android:id="@+id/tv5"
         android:gravity="center"
-        android:layout_width="373dp"
-        android:layout_height="53dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textSize="20dp"
@@ -84,8 +85,8 @@
     <TextView
         android:id="@+id/tv6"
         android:gravity="center"
-        android:layout_width="373dp"
-        android:layout_height="53dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="4dp"
         android:text="TextView"
         android:textSize="20dp"
@@ -99,8 +100,8 @@
     <TextView
         android:id="@+id/tv7"
         android:gravity="center"
-        android:layout_width="385dp"
-        android:layout_height="55dp"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textSize="20dp"
@@ -109,18 +110,98 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv6" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:background="@color/As"
+    <TextView
+        android:id="@+id/tv8"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
         android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+        app:layout_constraintTop_toBottomOf="@id/tv7"/>
+    <TextView
+        android:id="@+id/tv9"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv8"/>
+    <TextView
+        android:id="@+id/tv10"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv9"/>
+    <TextView
+        android:id="@+id/tv12"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv10"/>
+    <TextView
+        android:id="@+id/tv13"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv12"/>
+    <TextView
+        android:id="@+id/tv14"
+        android:gravity="center"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv13"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/okbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/As"
+        android:maxLines="1"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7"
+        app:layout_constraintVertical_bias="0.85" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

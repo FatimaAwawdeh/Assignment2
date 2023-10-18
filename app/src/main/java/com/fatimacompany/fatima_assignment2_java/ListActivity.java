@@ -1,17 +1,13 @@
 package com.fatimacompany.fatima_assignment2_java;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.fatimacompany.fatima_assignment2_java.databinding.ActivityListBinding;
 
 public class ListActivity extends AppCompatActivity {
@@ -29,15 +25,19 @@ public class ListActivity extends AppCompatActivity {
         Spinner spinner3 = binding.oppoSpinner;
         Spinner spinner4 = binding.googleSpinner;
         Spinner spinner = binding.spinner;
-        Button button = binding.button;
+        Button  button = binding.gobtn;
+        RadioGroup radioGroup = binding.group;
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        button.setOnClickListener(v -> {
                 Intent intent = new Intent(ListActivity.this, InputActivity.class);
-                startActivity(intent);
-            }
-        });
+
+            startActivity(intent);
+                }
+        );
+
+
+
+
 
         String[] colors = new String[]{"Colors", "Blue", "Black", "Silver", "Gold"};
         ArrayAdapter<String> adapterSpinner = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, colors);
@@ -61,3 +61,23 @@ public class ListActivity extends AppCompatActivity {
         spinner4.setAdapter(adapter4);
     }
 }
+
+//تبقى جزئية ال pass data from ListActivity to ResultActivity
+//    Intent intent = new Intent(ListActivity.this, ResultActivity.class);
+//    String selectedIphone = spinner1.getSelectedItem().toString();
+//    String selectedSamsung = spinner2.getSelectedItem().toString();
+//    String selectedOppo = spinner3.getSelectedItem().toString();
+//    String selectedGoogle = spinner4.getSelectedItem().toString();
+//    String selectedPhone = spinner.getSelectedItem().toString();
+//    int selectedRadioId = radioGroup.getCheckedRadioButtonId();
+//    RadioButton selectedRadioButton = findViewById(selectedRadioId);
+//    String selectedStorage = selectedRadioButton.getText().toString();
+//
+//    intent.putExtra("phone", selectedPhone);
+//     intent.putExtra("iphone", selectedIphone);
+//     intent.putExtra("samsung", selectedSamsung);
+//      intent.putExtra("oppo", selectedOppo);
+//      intent.putExtra("google", selectedGoogle);
+//      intent.putExtra("storage", selectedStorage);
+//
+//      startActivity(intent);

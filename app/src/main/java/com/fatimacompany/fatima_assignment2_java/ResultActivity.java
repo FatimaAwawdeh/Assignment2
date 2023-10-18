@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,15 +24,11 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         fillData(getIntent());
-
-        Button next = binding.Button3;
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        Button button = binding.okbtn;
+        button.setOnClickListener(v -> {
                 Intent intent = new Intent(ResultActivity.this, ThanksActivity.class);
                 startActivity(intent);
-            }
-        });
+            } );
     }
 
     private void fillData(Intent intent) {
@@ -43,6 +40,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView tv6 = binding.tv6;
         TextView tv7 = binding.tv7;
 
+
         tv1.setText("Name: " + intent.getStringExtra("name"));
         tv2.setText("Address: " + intent.getStringExtra("address"));
         tv3.setText("City: " + intent.getStringExtra("city"));
@@ -50,5 +48,7 @@ public class ResultActivity extends AppCompatActivity {
         tv5.setText("Type: " + intent.getStringExtra("type"));
         tv4.setText("Credit: " + intent.getStringExtra("credit"));
         tv7.setText("CVV: " + intent.getStringExtra("cvv"));
+
     }
+
 }
