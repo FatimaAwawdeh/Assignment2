@@ -34,11 +34,6 @@ public class ListActivity extends AppCompatActivity {
             startActivity(intent);
                 }
         );
-
-
-
-
-
         String[] colors = new String[]{"Colors", "Blue", "Black", "Silver", "Gold"};
         ArrayAdapter<String> adapterSpinner = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, colors);
         adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -62,22 +57,12 @@ public class ListActivity extends AppCompatActivity {
     }
 }
 
-//تبقى جزئية ال pass data from ListActivity to ResultActivity
-//    Intent intent = new Intent(ListActivity.this, ResultActivity.class);
-//    String selectedIphone = spinner1.getSelectedItem().toString();
-//    String selectedSamsung = spinner2.getSelectedItem().toString();
-//    String selectedOppo = spinner3.getSelectedItem().toString();
-//    String selectedGoogle = spinner4.getSelectedItem().toString();
-//    String selectedPhone = spinner.getSelectedItem().toString();
-//    int selectedRadioId = radioGroup.getCheckedRadioButtonId();
-//    RadioButton selectedRadioButton = findViewById(selectedRadioId);
-//    String selectedStorage = selectedRadioButton.getText().toString();
-//
-//    intent.putExtra("phone", selectedPhone);
-//     intent.putExtra("iphone", selectedIphone);
-//     intent.putExtra("samsung", selectedSamsung);
-//      intent.putExtra("oppo", selectedOppo);
-//      intent.putExtra("google", selectedGoogle);
-//      intent.putExtra("storage", selectedStorage);
-//
-//      startActivity(intent);
+
+
+
+
+
+
+
+
+

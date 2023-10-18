@@ -49,6 +49,7 @@ public class ResultActivity extends AppCompatActivity {
         tv4.setText("Credit: " + intent.getStringExtra("credit"));
         tv7.setText("CVV: " + intent.getStringExtra("cvv"));
 
+
     }
 
 }
